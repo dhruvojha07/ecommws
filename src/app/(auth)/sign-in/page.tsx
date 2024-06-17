@@ -79,7 +79,7 @@ const Page = () => {
           <div className="flex flex-col items-center space-y-2 text-center">
             <Icons.logo className="h-20 w-20" />
             <h1 className="text-2xl font-bold">
-              Sign in to your {isSeller ? "seller" : ""}
+              Sign in to your {isSeller ? "seller" : ""} account.
             </h1>
 
             <Link
@@ -154,7 +154,7 @@ const Page = () => {
                 variant="secondary"
                 disabled={isLoading}
               >
-                Contniue as customer?
+                Continue as customer?
               </Button>
             ) : (
               <Button
@@ -162,7 +162,7 @@ const Page = () => {
                 variant="secondary"
                 disabled={isLoading}
               >
-                Contniue as seller?
+                Continue as seller?
               </Button>
             )}
           </div>
