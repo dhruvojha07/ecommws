@@ -1,11 +1,11 @@
 import { WebhookRequest } from "@/server"
 import express from "express"
-import { stripe } from "@/lib/stripe"
+import { stripe } from "./lib/stripe"
 import type Stripe from "stripe"
-import { getPayloadClient } from "@/get-payload"
-import { Product } from "@/payload-types"
+import { getPayloadClient } from "./get-payload"
+import { Product } from "./payload-types"
 import { Resend } from "resend"
-import { ReceiptEmailHtml } from "@/components/emails/RecieptEmail"
+import { ReceiptEmailHtml } from "./components/emails/RecieptEmail"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 //validates the request actually comes from stripe
